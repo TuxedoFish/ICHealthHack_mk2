@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SplashScreen.unity
+    path: Assets/Scenes/SplashScreen.unity
     guid: 501164be41992234bb7d99e0baa7d931
   - enabled: 1
-    path: Assets/Scene01.unity
-    guid: f9577860670c9d94ba1cd6f5dfec3969
+    path: Assets/HemiSphere.unity
+    guid: 90a1016f0e3db494fb2c604f489a16dd
   - enabled: 1
-    path: Assets/EndGameScreen.unity
+    path: Assets/Scenes/EndGameScreen.unity
     guid: 1b2b37ccc6611a34294dc06d32fe7557
   - enabled: 1
-    path: Assets/CountdownScreen.unity
+    path: Assets/Scenes/CountdownScreen.unity
     guid: 2d53d09f07cdb0648814d0023cfe9543
+  - enabled: 1
+    path: Assets/Scenes/Scene01.unity
+    guid: f9577860670c9d94ba1cd6f5dfec3969
