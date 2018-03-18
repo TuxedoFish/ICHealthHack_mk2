@@ -44,9 +44,10 @@ public class TargetLogic : MonoBehaviour {
 		if(col.gameObject.tag == "Player")
 		{
 			setPosition ();
+            ScoreScript.scoreValue += 1;
 
             laserSource.Play();
-
+            
         }
 	}
 
