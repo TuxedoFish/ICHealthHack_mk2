@@ -735,6 +735,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114983446753698476, guid: 0aa74965a8ffa834bb442a9975ce1076,
+        type: 2}
+      propertyPath: timer
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0aa74965a8ffa834bb442a9975ce1076, type: 2}
   m_IsPrefabParent: 0
@@ -1265,6 +1270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77ed52196cb46664fb63f5ec947fc1ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserSource: {fileID: 0}
 --- !u!54 &1934639938
 Rigidbody:
   m_ObjectHideFlags: 0
