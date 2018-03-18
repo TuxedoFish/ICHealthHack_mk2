@@ -28,6 +28,7 @@ public class TargetLogic : MonoBehaviour {
 	}
 
 	void setPosition() {
+		Debug.Log ("Change Position");
 		var theta = Random.Range (0.0f, Mathf.PI/2.0f);
 		var psi = Random.Range (Mathf.PI/3.0f, Mathf.PI * (4.0f / 6.0f));
 
@@ -40,7 +41,7 @@ public class TargetLogic : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col)
 	{
-		if(col.gameObject.tag == "player")
+		if(col.gameObject.tag == "Player")
 		{
 			setPosition ();
 
