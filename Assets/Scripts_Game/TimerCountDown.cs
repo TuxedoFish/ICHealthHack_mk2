@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TimerCountDown : MonoBehaviour
 {
-    public string levelToLoad;
-    private float timer = 10f;
+    
+    private float timer = 30f;
     private Text timerSeconds;
 
     //init
@@ -22,7 +22,7 @@ public class TimerCountDown : MonoBehaviour
         timerSeconds.text = timer.ToString("f2");
         if (timer <= 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
