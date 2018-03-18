@@ -8,7 +8,7 @@ public class PlayerCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {//check object we cllided with has tag obstacle
-        if (collisionInfo.collider.tag == "obstacle")
+        if (collisionInfo.GetComponent<Collider>().tag == "obstacle")
         {
             movement.enabled = false; //Disables player movement
 
