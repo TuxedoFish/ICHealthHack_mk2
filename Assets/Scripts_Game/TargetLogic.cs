@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetLogic : MonoBehaviour {
+
+    public AudioSource laserSource;
+
 	private float radius;
 	private Vector3 origin;
 
@@ -14,7 +17,10 @@ public class TargetLogic : MonoBehaviour {
 		origin = reach [0].transform.position;
 
 		setPosition ();
-	}
+
+        laserSource = GetComponent<AudioSource>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -37,7 +43,10 @@ public class TargetLogic : MonoBehaviour {
 		if(col.gameObject.tag == "player")
 		{
 			setPosition ();
-		}
+
+            laserSource.Play();
+
+        }
 	}
 
 }
